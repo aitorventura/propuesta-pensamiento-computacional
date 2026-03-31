@@ -1,0 +1,76 @@
+site_name: Propuesta de Curso - Python con Metacognición
+
+theme:
+  name: material
+  icon:
+    logo: material/language-python
+  language: es
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Modo Claro
+  features:
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+
+nav:
+  - 🏠 Propuesta Formativa: index.md
+
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      auto_title: true
+      pygments_lang_class: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - css/extra.css
+  
+plugins:
+  - search
+  - mkdocs-pdf
