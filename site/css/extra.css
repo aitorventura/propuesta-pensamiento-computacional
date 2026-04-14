@@ -1,17 +1,26 @@
-/* Cambiar el fondo del footer (anterior/siguiente + made with...) */
-.md-footer {
-  background-color: #004d40 !important;  /* Verde turquesa oscuro */
+/* Fondo del footer igual a la cabecera según el modo (claro/oscuro) */
+.md-footer,
+.md-footer-meta {
+  background-color: var(--md-primary-fg-color) !important;
+}
+
+[data-md-color-scheme="slate"] .md-footer,
+[data-md-color-scheme="slate"] .md-footer-meta {
+  background-color: var(--md-default-bg-color) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Sutil separación visual */
 }
 
 /* Cambiar el color del texto dentro del footer */
 .md-footer,
 .md-footer__link,
 .md-footer__direction {
-  color: #ffffff !important;
+  color: var(--md-primary-bg-color, #ffffff) !important;
 }
 
-.md-footer-meta {
-  background-color: #00332c !important; /* verde más oscuro del fondo lateral */
+[data-md-color-scheme="slate"] .md-footer,
+[data-md-color-scheme="slate"] .md-footer__link,
+[data-md-color-scheme="slate"] .md-footer__direction {
+  color: var(--md-default-fg-color) !important;
 }
 
 .md-footer-meta__inner {

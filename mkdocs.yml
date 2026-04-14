@@ -1,9 +1,9 @@
-site_name: Propuesta de Curso - Python con Metacognición
+site_name: Propuestas de Formación CEFIRE
 
 theme:
   name: material
   icon:
-    logo: material/language-python
+    logo: material/school
   language: es
   custom_dir: overrides
   palette:
@@ -27,7 +27,9 @@ theme:
     - content.code.select
 
 nav:
-  - 🏠 Propuesta Formativa: index.md
+  - 🏠 Inicio: index.md
+  - 🖥️ Introducción a la programación en Python: curso-python.md
+  - 🧠 Herramientas IA para crear contenido didáctico: curso-ia-docente.md
 
 markdown_extensions:
   - md_in_html
